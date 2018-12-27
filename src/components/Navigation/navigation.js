@@ -1,5 +1,5 @@
-class Navigation {
-    constructor(element) {
+class Navigation extends Component{
+    // constructor(element) {
         this.element = element; //sets the variable equal to the new object created
         this.button = this.element.querySelector('.menu-button'); //grabs the .menu-button element from the object
         this.content = this.element.querySelector('.menu-content');//grabs the .menu-content element from the object
@@ -10,12 +10,13 @@ class Navigation {
         this.content.classList.toggle('menu-hidden');
         if(e.target.src.includes("close")){
             e.target.src = "img/nav-hamburger.png";
-            TweenMax.to(this.content, .5, {width: '0%', height: '0%', right: '28%', opacity: 0, clearProps:'opacity'});
+            // TweenMax.to(this.content, .5, {width: '0%', height: '0%', right: '28%', opacity: 0, clearProps:'opacity'});
         } else {
             e.target.src = "img/nav-hamburger-close.png"
-            TweenMax.to(this.content, .5, {width: '100%', height: '100%', right: '0%'});
+            // TweenMax.to(this.content, .5, {width: '100%', height: '100%', right: '0%'});
         }
     }
 }
 //Grabs all the .navigation elements and creates a new Navigation object for them
 const menus = document.querySelectorAll('.navigation').forEach( menu => new Navigation(menu)); 
+
