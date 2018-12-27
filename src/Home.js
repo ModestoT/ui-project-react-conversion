@@ -9,6 +9,7 @@ class Home extends Component {
                     <h1  id="animate1">Integrity,<br/> Excellence,<br/> Progress.</h1>
                 </div>
                 <img id="animate1" class ="desktop" src={require("./img/home/home-jumbotron.png")} alt="Home Jumbo"/>
+				<img class ="mobile" src={require("./img/home/home-mobile-jumbotron.png")} alt="Home Jumbo"/>
             </header>
 
 			<section class="main-content">
@@ -22,8 +23,8 @@ class Home extends Component {
 						</div>
 						<img class="pencil desktop" src={require("./img/home/home-img-1.png")} alt="Pencil"/>
 					</div>
-					{/* <img class="pencil mobile" src="img\home\home-mobile-img-1.png"/> */}
-					{/* <img class="view mobile" src="img\home\home-mobile-img-2.png"/> */}
+					<img class="pencil mobile" src={require("./img/home/home-mobile-img-1.png")} alt="Pencil"/>
+					<img class="view mobile" src={require("./img/home/home-mobile-img-2.png")} alt="Desktop"/>
 					<div class="top-content" id="animate3">
 						<img class="view desktop" src={require("./img/home/home-img-2.png")} alt="Desktop"/>
 						<div class="info">
@@ -40,7 +41,7 @@ class Home extends Component {
 					<div class="content">
 						<h2 id="animate4" class="villa">THE VILLAS</h2>
 						<img id="animate4" class="desktop" src={require("./img/home/home-villas-img.png")} alt="Villa"/>
-						{/* <img class="mobile" src="img\home\home-mobile-villas-img.png"/> */}
+						<img class="mobile" src={require("./img/home/home-mobile-villas-img.png")} alt="Villa"/>
 						<p id="animate4">The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
 						<p id="animate4">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
 						<div id="trigger4"></div>
@@ -48,7 +49,7 @@ class Home extends Component {
 					<div class="content">
 						<h2 class="outskirts" id="animate5">OUTSKIRTS</h2>
 						<img id="animate5" class="desktop" src={require("./img/home/home-outskirts-img.png")} alt="Outskirts"/>
-						{/* <img class="mobile"	src="img\home\home-mobile-outskirts-img.png"/> */}
+						<img class="mobile"	src={require("./img/home/home-mobile-outskirts-img.png")} alt="Outskirts"/>
 						<p id="animate5">The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
 						<p id="animate5">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
 						<div id="trigger5"></div>
@@ -56,7 +57,7 @@ class Home extends Component {
 					<div class="content">
 						<h2 class="the-block" id="animate6">THE BLOCKS</h2>
 						<img id="animate6" class="desktop" src={require("./img/home/home-the-blocks-img.png")} alt="The Blocks"/>
-						{/* <img class="mobile" src="img\home\home-mobile-the-blocks-img.png"/> */}
+						<img class="mobile" src={require("./img/home/home-mobile-the-blocks-img.png")} alt="The Blocks"/>
 						<p>The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
 						<div id="trigger6"></div>
 						<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. </p>
