@@ -1,0 +1,393 @@
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Your Code Goes Here */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  background-color: #FFFFFF;
+  color: #222222;
+  font-Family: 'Roboto', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 2.4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.home .mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .home {
+    padding-top: 0;
+  }
+  .home .mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .home .desktop {
+    display: none;
+  }
+}
+.home .intro {
+  display: flex;
+}
+.home .intro .intro-text {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 61%;
+  padding-left: 3.7%;
+  padding-top: 184px;
+  font-size: 4rem;
+  line-height: 4.9rem;
+  color: white;
+}
+@media (max-width: 500px) {
+  .home .intro .intro-text {
+    height: 52%;
+    padding-top: 0;
+  }
+}
+.home .intro img {
+  width: 100%;
+  height: 547px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    height: 400px;
+  }
+}
+.home .main-content {
+  padding: 5% 7% 0;
+}
+@media (max-width: 500px) {
+  .home .main-content {
+    padding: 12% 0;
+  }
+}
+.home .main-content .top-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .home .main-content .top-content {
+    padding: 0 5%;
+  }
+}
+.home .main-content .top-content .info {
+  width: 50%;
+  padding-top: 45px;
+}
+@media (max-width: 500px) {
+  .home .main-content .top-content .info {
+    padding-top: 0;
+    width: 100%;
+  }
+}
+.home .main-content .top-content .info h3 {
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .home .main-content .top-content .info h3 {
+    font-size: 2.2rem;
+  }
+}
+.home .main-content .top-content .info p {
+  line-height: 1.5rem;
+  padding: 15px 1%;
+}
+@media (max-width: 500px) {
+  .home .main-content .top-content .info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 26px 0;
+  }
+}
+.home .main-content .top-content .pencil {
+  padding-left: 2%;
+  margin-bottom: 92px;
+}
+@media (max-width: 500px) {
+  .home .main-content .top-content .pencil {
+    order: -1;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+}
+.home .main-content .top-content .view {
+  padding-right: 2%;
+  margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .home .main-content .top-content .view {
+    padding: 0;
+    margin: 54px 0 40px;
+  }
+}
+.home .main-content .top-content button {
+  width: 33%;
+  height: 49px;
+  background-color: white;
+  font-size: 1rem;
+  margin-top: 9px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.home .main-content .top-content button:hover {
+  background-color: #222222;
+  color: #FFF;
+}
+@media (max-width: 500px) {
+  .home .main-content .top-content button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.3rem;
+  }
+}
+.home .main-content .bottom-content {
+  padding: 10.7% 0.5% 0;
+}
+@media (max-width: 500px) {
+  .home .main-content .bottom-content {
+    padding: 60px 1% 0;
+  }
+}
+.home .main-content .bottom-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 39px;
+}
+@media (max-width: 500px) {
+  .home .main-content .bottom-content h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    padding: 0 5%;
+  }
+}
+.home .main-content .bottom-content .content {
+  margin-bottom: 86px;
+}
+.home .main-content .bottom-content .content .villa {
+  background-color: #D8D8D8;
+  z-index: 1;
+  position: absolute;
+  margin: 9.2% 0 0 28.8%;
+  padding: 1.5% 2.3%;
+  font-size: 1.8rem;
+  font-family: 'Cabin Condensed', Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 9px;
+}
+@media (max-width: 500px) {
+  .home .main-content .bottom-content .content .villa {
+    margin: 57.2% 0 0 4.1%;
+    padding: 7.5% 18.8%;
+    font-size: 2.2rem;
+  }
+}
+.home .main-content .bottom-content .content .outskirts {
+  background-color: #D8D8D8;
+  z-index: 1;
+  position: absolute;
+  margin: 9.1% 0;
+  padding: 1.5% 2.2%;
+  font-size: 1.8rem;
+  font-weight: normal;
+  letter-spacing: 9px;
+}
+@media (max-width: 500px) {
+  .home .main-content .bottom-content .content .outskirts {
+    margin: 57.2% 0 0 4.1%;
+    padding: 7.5% 17.8%;
+    font-size: 2.2rem;
+  }
+}
+.home .main-content .bottom-content .content .the-block {
+  background-color: #D8D8D8;
+  z-index: 1;
+  position: absolute;
+  margin: 9.1% 0 0 27.6%;
+  padding: 1.5% 1.9%;
+  font-size: 1.8rem;
+  font-weight: normal;
+  letter-spacing: 9px;
+}
+@media (max-width: 500px) {
+  .home .main-content .bottom-content .content .the-block {
+    margin: 57.2% 0 0 4.1%;
+    padding: 7.5% 14.3%;
+    font-size: 2.2rem;
+  }
+}
+.home .main-content .bottom-content .content img {
+  margin-bottom: 71px;
+}
+@media (max-width: 500px) {
+  .home .main-content .bottom-content .content img {
+    margin-bottom: 130px;
+  }
+}
+.home .main-content .bottom-content .content p {
+  width: 59%;
+  margin-left: 23.5%;
+  line-height: 2.1rem;
+  margin-bottom: 12px;
+}
+@media (max-width: 500px) {
+  .home .main-content .bottom-content .content p {
+    width: 90%;
+    margin: 5% 5% 7%;
+    line-height: 2rem;
+    font-size: 1.7rem;
+  }
+}
